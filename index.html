@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landings Page</title>
+
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/sass/main.scss" />
+
+    <script defer src="src/js/controller.js" type="module"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="heading-1">Title</h1>
+        <h2 class="heading-2">Subtitle</h2>
+        <button class="btn">Click</button>
+      </header>
+
+      <div class="landings">
+        <h2 class="heading-2">Title</h2>
+        <h3 class="heading-3">Subtitle</h3>
+        <p class="paragraph">Text about landings</p>
+
+        <div class="landing">
+          <div class="landing__front">
+            <h4 class="heading-4">Landing title</h4>
+          </div>
+          <div class="landing__back">
+            <h4 class="heading-4">Landing title</h4>
+            <p class="paragraph">Landing text</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="plans">
+        <div class="plan">
+          <div class="plan__front">
+            <svg class="plan__icon">
+              <use xlink:href="img/sprite.svg#icon-trophy"></use>
+            </svg>
+            <h3 class="heading-3">Plan title</h3>
+            <ul class="plan__list">
+              <li class="plan__list-item">Plan list item</li>
+              <li class="plan__list-item">Plan list item</li>
+              <li class="plan__list-item">Plan list item</li>
+              <li class="plan__list-item">Plan list item</li>
+            </ul>
+          </div>
+          <div class="plan__back">
+            <span class="only">only</span>
+            <h3 class="heading-3">Plan price</h3>
+            <button class="btn">Select plan</button>
+          </div>
+        </div>
+        <button class="btn">Get starter</button>
+      </div>
+
+      <div class="testimonials">
+        <div class="testimonials__about">
+          <h2 class="heading-2">Testimonials title</h2>
+          <div class="testimonials__paragraphs">
+            <p class="paragraph">
+              <span>+ de X</span>
+              Testimonial paragraph
+            </p>
+            <p class="paragraph">
+              <span>+ de X</span>
+              Testimonial paragraph
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonials__testimonials">
+          <div class="testimonials__testimonials__arrows">
+            <button class="btn btn-prev"><</button>
+            <button class="btn btn-next">></button>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__title">Name</div>
+            <div class="testimonial__rate">stars</div>
+            <div class="paragraph">Testimonial paragraph</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="newsletter">
+        <div class="newsletter__about">
+          <h2 class="heading-2">Newsletter title</h2>
+          <p class="paragraph">Newsletter paragraph</p>
+          <button class="btn">Learn more</button>
+        </div>
+        <div class="newsletter__img"></div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__social-media">Social Medias</div>
+        <div class="footer__about-me">
+          <h4 class="heading-4">Title about me</h4>
+          <p class="paragraph">Text about me</p>
+        </div>
+        <div class="footer__copyright">
+          <p class="paragraph">&copy; Copyright 2021 by Bitner.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
