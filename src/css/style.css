@@ -1,0 +1,66 @@
+.btn {
+  width: 20rem;
+  background-color: #A5A58D;
+  color: #fff;
+  border: none;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 0.5rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06); }
+  .btn:hover {
+    background-color: #b7b7a4; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Quicksand", sans-serif;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 99vh repeat(4, min-content);
+  grid-template-columns: 1fr; }
+
+.heading-1 {
+  text-transform: uppercase;
+  color: #A5A58D;
+  font-size: 4rem;
+  font-weight: 700;
+  align-self: center; }
+
+.heading-2 {
+  color: #A5A58D;
+  justify-self: center;
+  align-self: center;
+  font-size: 2rem; }
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/landing-success.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 8rem;
+  padding: 4rem;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 3fr 2fr min-content;
+  justify-content: center;
+  align-content: center; }
+  .header .btn {
+    justify-self: center; }

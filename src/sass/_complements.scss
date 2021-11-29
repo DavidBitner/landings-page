@@ -1,0 +1,20 @@
+.btn {
+  width: 20rem;
+  background-color: $color-primary;
+  color: $color-white;
+  border: none;
+  font-family: $font-primary;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 0.5rem;
+  box-shadow: $shadow-light;
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+}
