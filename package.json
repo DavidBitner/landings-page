@@ -1,0 +1,30 @@
+{
+  "name": "landings-page",
+  "version": "1.0.0",
+  "description": "A landing page",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
+    "compile:sass": "node-sass src/sass/main.scss src/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" src/css/style.comp.css -o src/css/style.prefix.css",
+    "compress:css": "node-sass src/css/style.prefix.css src/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidBitner/landings-page.git"
+  },
+  "author": "David Bitner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidBitner/landings-page/issues"
+  },
+  "homepage": "https://github.com/DavidBitner/landings-page#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "concat": "^1.0.3",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^9.0.2"
+  }
+}
