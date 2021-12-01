@@ -1,21 +1,20 @@
 .landings {
   margin: 5rem;
   display: grid;
-  grid-template-rows: repeat(3, min-content) 1fr 1fr 1fr;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  grid-template-rows: repeat(4, min-content);
   text-align: center;
-
-  .heading-2,
-  .heading-3,
-  .paragraph {
-    grid-column: 1/-1;
+  gap: $gap-size;
+  
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $gap-size;
   }
 }
 
 .landing {
   display: grid;
-  grid-template-rows: 15rem;
+  grid-template-rows: 25rem;
 
   &__side {
     display: grid;
@@ -24,32 +23,36 @@
     overflow: hidden;
     grid-row: 1/-1;
     grid-column: 1/-1;
+    border-radius: 0.5rem;
+    box-shadow: $shadow-light;
 
     &--front {
       background-color: $color-primary;
       align-self: center;
-      line-height: 15rem;
-      
+      line-height: 25rem;
+
       &-1 {
-        background: linear-gradient(
-          rgba($color-primary, 0.7),
-          rgba($color-primary, 0.7)
-          ),
-          url("../img/landing-1.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        @include landingSideFrontImage("../img/landing-1.jpg");
       }
 
       &-2 {
-        background: linear-gradient(
-            rgba($color-primary, 0.7),
-            rgba($color-primary, 0.7)
-          ),
-          url("../img/landing-2.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        @include landingSideFrontImage("../img/landing-2.jpg");
+      }
+
+      &-3 {
+        @include landingSideFrontImage("../img/landing-3.jpg");
+      }
+
+      &-4 {
+        @include landingSideFrontImage("../img/landing-4.jpg");
+      }
+
+      &-5 {
+        @include landingSideFrontImage("../img/landing-5.jpg");
+      }
+
+      &-6 {
+        @include landingSideFrontImage("../img/landing-6.jpg");
       }
     }
 
@@ -64,6 +67,10 @@
 
       .heading-4 {
         align-self: center;
+      }
+
+      .paragraph {
+        margin: 1rem;
       }
     }
   }

@@ -1,10 +1,10 @@
 // Colors
-$color-primary: #A5A58D;
+$color-primary: #a5a58d;
 $color-primary-light: #b7b7a4;
-$color-primary-dark: #36382E;
+$color-primary-dark: #36382e;
 
-$color-secondary-light: #FFE8D6;
-$color-secondary-dark: #CB997E;
+$color-secondary-light: #ffe8d6;
+$color-secondary-dark: #cb997e;
 
 $color-gray-light-1: #f7f7f7;
 $color-gray-light-2: #eee;
@@ -15,9 +15,12 @@ $color-gray-dark-2: #333;
 $color-white: #fff;
 $color-black: #000;
 
-// FONT VARIABLES
-$font-primary: 'Quicksand', sans-serif;
+// Font
+$font-primary: "Quicksand", sans-serif;
 
 // Shadows
 $shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 $shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+// Grid
+$gap-size: 3rem;

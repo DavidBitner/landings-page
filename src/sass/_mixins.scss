@@ -1,0 +1,10 @@
+@mixin landingSideFrontImage($img) {
+  background: linear-gradient(
+      rgba($color-primary, 0.7),
+      rgba($color-primary, 0.7)
+    ),
+    url($img);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
