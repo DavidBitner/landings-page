@@ -55,8 +55,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/landing-success.jpg");
   background-size: cover;
   background-position: center;
-  padding: 8rem;
-  padding: 4rem;
+  padding: 3rem;
   text-align: center;
   display: grid;
   grid-template-rows: 40% 30% min-content;
@@ -66,11 +65,12 @@ body {
     justify-self: center; }
 
 .landings {
-  margin: 5rem;
+  padding: 3rem;
   display: grid;
   grid-template-rows: repeat(4, min-content);
   text-align: center;
-  gap: 3rem; }
+  gap: 3rem;
+  perspective: 150rem; }
   .landings__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -135,8 +135,30 @@ body {
   .landing:hover .landing__side--back {
     transform: rotateY(0); }
 
+.music {
+  display: grid;
+  grid-template-rows: 50vh;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  background-color: #ffe8d6;
+  padding: 3rem; }
+  .music__img {
+    background-color: #ffe8d6;
+    background-image: url("../img/music.jpg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    border-radius: 0.5rem; }
+  .music__about {
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    align-self: center;
+    gap: 3rem; }
+    .music__about .heading-2 {
+      justify-self: left; }
+
 .footer {
-  padding: 5rem;
+  padding: 3rem;
   display: grid;
   grid-template-rows: min-content;
   grid-template-columns: 1fr 1px 1fr;

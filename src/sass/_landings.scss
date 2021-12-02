@@ -1,10 +1,11 @@
 .landings {
-  margin: 5rem;
+  padding: $padding-size;
   display: grid;
   grid-template-rows: repeat(4, min-content);
   text-align: center;
   gap: $gap-size;
-  
+  perspective: 150rem;
+
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -23,7 +24,7 @@
     overflow: hidden;
     grid-row: 1/-1;
     grid-column: 1/-1;
-    border-radius: 0.5rem;
+    border-radius: $border-radius;
     box-shadow: $shadow-light;
 
     &--front {
