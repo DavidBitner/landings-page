@@ -1,5 +1,4 @@
 .btn {
-  width: 20rem;
   background-color: #a5a58d;
   color: #fff;
   border: none;
@@ -41,7 +40,7 @@ body {
 .heading-1 {
   text-transform: uppercase;
   color: #a5a58d;
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 700;
   align-self: center; }
 
@@ -49,13 +48,23 @@ body {
   color: #a5a58d;
   justify-self: center;
   align-self: center;
+  font-size: 3rem; }
+
+.heading-3 {
+  color: #000;
   font-size: 2rem; }
+
+.heading-4 {
+  font-size: 1.7rem; }
+
+.paragraph {
+  font-size: 1.6rem; }
 
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/landing-success.jpg");
   background-size: cover;
   background-position: center;
-  padding: 3rem;
+  padding: 10rem 3rem;
   text-align: center;
   display: grid;
   grid-template-rows: 40% 30% min-content;
@@ -65,15 +74,15 @@ body {
     justify-self: center; }
 
 .landings {
-  padding: 3rem;
+  padding: 10rem 3rem;
   display: grid;
-  grid-template-rows: repeat(4, min-content);
+  grid-template-rows: repeat(3, min-content);
   text-align: center;
   gap: 3rem;
   perspective: 150rem; }
   .landings__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 3rem; }
 
 .landing {
@@ -135,13 +144,53 @@ body {
   .landing:hover .landing__side--back {
     transform: rotateY(0); }
 
+.plans {
+  padding: 10rem 3rem;
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  background-color: #b7b7a4;
+  color: #fff; }
+
+.plan {
+  display: grid;
+  grid-template-rows: min-content;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  align-items: center;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  text-align: center; }
+  .plan .heading-2 {
+    font-weight: 700;
+    font-size: 5rem; }
+  .plan .heading-3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 3rem;
+    color: #b7b7a4; }
+  .plan__list {
+    list-style: none;
+    margin: 3rem 0; }
+    .plan__list-item {
+      line-height: 6rem;
+      font-size: 1.6rem; }
+      .plan__list-item:not(:last-child) {
+        border-bottom: 1px solid #a5a58d; }
+  .plan-1 {
+    background-color: #a5a58d;
+    background-image: url("../img/plan-kids.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+
 .music {
   display: grid;
   grid-template-rows: 50vh;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
   background-color: #ffe8d6;
-  padding: 3rem; }
+  padding: 10rem 3rem; }
   .music__img {
     background-color: #ffe8d6;
     background-image: url("../img/music.jpg");
@@ -158,7 +207,7 @@ body {
       justify-self: left; }
 
 .footer {
-  padding: 3rem;
+  padding: 10rem 3rem;
   display: grid;
   grid-template-rows: min-content;
   grid-template-columns: 1fr 1px 1fr;

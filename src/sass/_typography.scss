@@ -1,7 +1,7 @@
 .heading-1 {
   text-transform: uppercase;
   color: $color-primary;
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 700;
   align-self: center;
 }
@@ -10,5 +10,18 @@
   color: $color-primary;
   justify-self: center;
   align-self: center;
+  font-size: 3rem;
+}
+
+.heading-3 {
+  color: $color-black;
   font-size: 2rem;
+}
+
+.heading-4 {
+  font-size: 1.7rem;
+}
+
+.paragraph {
+  font-size: 1.6rem;
 }
