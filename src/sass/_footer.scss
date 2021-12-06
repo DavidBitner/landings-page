@@ -7,10 +7,10 @@
   align-items: center;
   gap: $gap-size;
   background-color: $color-primary-dark;
-  color: $color-secondary-light;
+  color: $color-primary-light;
 
   &__middle {
-    border-right: 1px solid $color-secondary-light;
+    border-right: 1px solid $color-primary-light;
     align-self: stretch;
   }
 
@@ -18,7 +18,7 @@
     justify-self: center;
 
     a {
-      color: $color-secondary-light;
+      color: $color-primary-light;
       text-decoration: none;
     }
   }

@@ -3,11 +3,11 @@
   grid-template-rows: 50vh;
   grid-template-columns: repeat(2, 1fr);
   gap: $gap-size;
-  background-color: $color-secondary-light;
+  background-color: $color-gray-light-1;
   padding: $padding-size;
 
   &__img {
-    background-color: $color-secondary-light;
+    background-color: $color-gray-light-1;
     background-image: url("../img/music.jpg");
     background-position: center;
     background-size: cover;

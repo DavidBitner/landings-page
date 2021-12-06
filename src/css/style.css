@@ -1,8 +1,8 @@
 .btn {
-  background-color: #a5a58d;
+  background-color: #d6a283;
   color: #fff;
   border: none;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -13,7 +13,7 @@
   border-radius: 0.5rem;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06); }
   .btn:hover {
-    background-color: #b7b7a4; }
+    background-color: #e3bea9; }
 
 *,
 *::before,
@@ -27,7 +27,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #000;
   font-weight: 400;
   line-height: 1.6; }
@@ -39,13 +39,13 @@ body {
 
 .heading-1 {
   text-transform: uppercase;
-  color: #a5a58d;
+  color: #d6a283;
   font-size: 6rem;
   font-weight: 700;
   align-self: center; }
 
 .heading-2 {
-  color: #a5a58d;
+  color: #d6a283;
   justify-self: center;
   align-self: center;
   font-size: 3rem; }
@@ -79,7 +79,8 @@ body {
   grid-template-rows: repeat(3, min-content);
   text-align: center;
   gap: 3rem;
-  perspective: 150rem; }
+  perspective: 150rem;
+  background-color: #f7f7f7; }
   .landings__grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -87,7 +88,8 @@ body {
 
 .landing {
   display: grid;
-  grid-template-rows: 25rem; }
+  grid-template-rows: 25rem;
+  color: #fff; }
   .landing__side {
     display: grid;
     transition: all 1s ease;
@@ -98,41 +100,41 @@ body {
     border-radius: 0.5rem;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06); }
     .landing__side--front {
-      background-color: #a5a58d;
+      background-color: #d6a283;
       align-self: center;
       line-height: 25rem; }
       .landing__side--front-1 {
-        background: linear-gradient(rgba(165, 165, 141, 0.7), rgba(165, 165, 141, 0.7)), url("../img/landing-1.jpg");
+        background: linear-gradient(rgba(214, 162, 131, 0.7), rgba(214, 162, 131, 0.7)), url("../img/landing-1.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; }
       .landing__side--front-2 {
-        background: linear-gradient(rgba(165, 165, 141, 0.7), rgba(165, 165, 141, 0.7)), url("../img/landing-2.jpg");
+        background: linear-gradient(rgba(214, 162, 131, 0.7), rgba(214, 162, 131, 0.7)), url("../img/landing-2.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; }
       .landing__side--front-3 {
-        background: linear-gradient(rgba(165, 165, 141, 0.7), rgba(165, 165, 141, 0.7)), url("../img/landing-3.jpg");
+        background: linear-gradient(rgba(214, 162, 131, 0.7), rgba(214, 162, 131, 0.7)), url("../img/landing-3.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; }
       .landing__side--front-4 {
-        background: linear-gradient(rgba(165, 165, 141, 0.7), rgba(165, 165, 141, 0.7)), url("../img/landing-4.jpg");
+        background: linear-gradient(rgba(214, 162, 131, 0.7), rgba(214, 162, 131, 0.7)), url("../img/landing-4.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; }
       .landing__side--front-5 {
-        background: linear-gradient(rgba(165, 165, 141, 0.7), rgba(165, 165, 141, 0.7)), url("../img/landing-5.jpg");
+        background: linear-gradient(rgba(214, 162, 131, 0.7), rgba(214, 162, 131, 0.7)), url("../img/landing-5.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; }
       .landing__side--front-6 {
-        background: linear-gradient(rgba(165, 165, 141, 0.7), rgba(165, 165, 141, 0.7)), url("../img/landing-6.jpg");
+        background: linear-gradient(rgba(214, 162, 131, 0.7), rgba(214, 162, 131, 0.7)), url("../img/landing-6.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat; }
     .landing__side--back {
-      background-image: linear-gradient(to right bottom, #b7b7a4, #36382e);
+      background-image: linear-gradient(to right bottom, #e3bea9, #8e5433);
       grid-template-rows: 1fr 1fr;
       transform: rotateY(180deg); }
       .landing__side--back .heading-4 {
@@ -150,7 +152,7 @@ body {
   grid-template-rows: min-content;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  background-color: #b7b7a4;
+  background-color: #8e5433;
   color: #fff; }
 
 .plan {
@@ -168,7 +170,7 @@ body {
     text-transform: uppercase;
     font-weight: 300;
     font-size: 3rem;
-    color: #b7b7a4; }
+    color: #e3bea9; }
   .plan__list {
     list-style: none;
     margin: 3rem 0; }
@@ -176,23 +178,68 @@ body {
       line-height: 6rem;
       font-size: 1.6rem; }
       .plan__list-item:not(:last-child) {
-        border-bottom: 1px solid #a5a58d; }
+        border-bottom: 1px solid #d6a283; }
   .plan-1 {
-    background-color: #a5a58d;
+    background-color: #d6a283;
     background-image: url("../img/plan-kids.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
+
+.testimonials {
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10rem 3rem;
+  align-items: center;
+  background-color: #d6a283; }
+  .testimonials__about {
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    color: white; }
+    .testimonials__about .heading-2 {
+      color: white; }
+  .testimonials__paragraphs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem; }
+    .testimonials__paragraphs span {
+      font-size: 3rem;
+      display: block;
+      justify-self: center; }
+  .testimonials__testimonials {
+    display: grid;
+    grid-template-rows: repeat(2, min-content); }
+    .testimonials__testimonials__arrows {
+      justify-self: right;
+      margin-bottom: 1rem; }
+
+.testimonial {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: min-content 1fr;
+  background-color: #fff;
+  color: #d6a283;
+  padding: 2rem;
+  gap: 1rem; }
+  .testimonial__title {
+    color: #d6a283; }
+  .testimonial__rate {
+    color: #d6a283;
+    font-size: 2rem; }
+  .testimonial .paragraph {
+    grid-row: 2/-1;
+    grid-column: 1/-1; }
 
 .music {
   display: grid;
   grid-template-rows: 50vh;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
-  background-color: #ffe8d6;
+  background-color: #f7f7f7;
   padding: 10rem 3rem; }
   .music__img {
-    background-color: #ffe8d6;
+    background-color: #f7f7f7;
     background-image: url("../img/music.jpg");
     background-position: center;
     background-size: cover;
@@ -214,15 +261,15 @@ body {
   justify-items: left;
   align-items: center;
   gap: 3rem;
-  background-color: #36382e;
-  color: #ffe8d6; }
+  background-color: #8e5433;
+  color: #e3bea9; }
   .footer__middle {
-    border-right: 1px solid #ffe8d6;
+    border-right: 1px solid #e3bea9;
     align-self: stretch; }
   .footer__copyright {
     justify-self: center; }
     .footer__copyright a {
-      color: #ffe8d6;
+      color: #e3bea9;
       text-decoration: none; }
 
 .modal {
@@ -274,10 +321,10 @@ body {
     justify-self: right;
     margin-right: 1rem; }
     .modal__close:link, .modal__close:visited {
-      color: #a5a58d;
+      color: #d6a283;
       font-size: 3rem;
       text-decoration: none;
       transition: all 0.2s;
       line-height: 1; }
     .modal__close:hover {
-      color: #a5a58d; }
+      color: #d6a283; }

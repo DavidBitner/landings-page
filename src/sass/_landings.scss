@@ -5,7 +5,8 @@
   text-align: center;
   gap: $gap-size;
   perspective: 150rem;
-
+  background-color: $color-gray-light-1;
+  
   &__grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -16,6 +17,7 @@
 .landing {
   display: grid;
   grid-template-rows: 25rem;
+  color: $color-white;
 
   &__side {
     display: grid;
