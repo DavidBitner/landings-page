@@ -1,0 +1,64 @@
+.testimonials {
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: repeat(2, 1fr);
+  padding: $padding-size;
+  align-items: center;
+  background-color: $color-primary;
+
+  &__about {
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    color: white;
+
+    .heading-2 {
+      color: white;
+    }
+  }
+
+  &__paragraphs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $gap-size;
+
+    span {
+      font-size: 3rem;
+      display: block;
+      justify-self: center;
+    }
+  }
+
+  &__testimonials {
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+
+    &__arrows {
+      justify-self: right;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.testimonial {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: min-content 1fr;
+  background-color: $color-white;
+  color: $color-primary;
+  padding: 2rem;
+  gap: 1rem;
+
+  &__title {
+    color: $color-primary;
+  }
+
+  &__rate {
+    color: $color-primary;
+    font-size: 2rem;
+  }
+
+  .paragraph {
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+  }
+}
