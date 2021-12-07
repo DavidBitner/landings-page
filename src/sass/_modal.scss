@@ -32,7 +32,7 @@
     display: grid;
     grid-template-rows: repeat(2, min-content);
     grid-template-columns: 90% 10%;
-    row-gap: 1rem;
+    row-gap: $gap-small;
 
     .heading-2 {
       justify-self: left;
@@ -43,7 +43,7 @@
     grid-column: 1/-1;
     display: grid;
     grid-template-rows: repeat(3, min-content);
-    gap: 1rem;
+    gap: $gap-small;
 
     ul {
       padding-left: 1.5rem;

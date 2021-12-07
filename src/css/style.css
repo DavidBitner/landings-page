@@ -102,13 +102,14 @@ body {
   position: relative;
   display: grid;
   grid-template-rows: min-content;
-  align-content: center; }
+  align-content: center;
+  overflow: hidden; }
   .header__background {
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: 0;
-    animation: backgroundHeaderAnimation 20s ease 0s infinite alternate none;
+    animation: backgroundHeaderAnimation 20s ease-in-out 0s infinite alternate forwards;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/landing-success.jpg");
     background-size: cover;
     background-position: center; }
@@ -251,7 +252,8 @@ body {
   .testimonials__about {
     display: grid;
     grid-template-rows: repeat(2, min-content);
-    color: white; }
+    color: white;
+    row-gap: 1rem; }
     .testimonials__about .heading-2 {
       color: white; }
   .testimonials__paragraphs {

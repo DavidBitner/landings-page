@@ -3,14 +3,14 @@
   display: grid;
   grid-template-rows: repeat(3, min-content);
   text-align: center;
-  gap: $gap-size;
+  gap: $gap-medium;
   perspective: 150rem;
   background-color: $color-gray-light-1;
   
   &__grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: $gap-size;
+    gap: $gap-medium;
   }
 }
 

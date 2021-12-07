@@ -10,6 +10,7 @@
     display: grid;
     grid-template-rows: repeat(2, min-content);
     color: white;
+    row-gap: $gap-small;
 
     .heading-2 {
       color: white;
@@ -19,7 +20,7 @@
   &__paragraphs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: $gap-size;
+    gap: $gap-medium;
 
     span {
       font-size: 3rem;
@@ -46,7 +47,7 @@
   background-color: $color-white;
   color: $color-primary;
   padding: 2rem;
-  gap: 1rem;
+  gap: $gap-small;
 
   &__title {
     color: $color-primary;

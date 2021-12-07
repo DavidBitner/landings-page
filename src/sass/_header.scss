@@ -6,6 +6,7 @@
   display: grid;
   grid-template-rows: min-content;
   align-content: center;
+  overflow: hidden;
 
   &__background {
     position: absolute;
@@ -13,7 +14,7 @@
     width: 100%;
     z-index: 0;
 
-    animation: backgroundHeaderAnimation 20s ease 0s infinite alternate none;
+    animation: backgroundHeaderAnimation 20s ease-in-out 0s infinite alternate forwards;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url("../img/landing-success.jpg");
     background-size: cover;
@@ -27,7 +28,7 @@
     display: grid;
     grid-template-rows: 40% 30% min-content;
     justify-items: center;
-    gap: 5rem;
+    gap: $gap-large;
   }
 }
 

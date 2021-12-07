@@ -3,7 +3,7 @@
   display: grid;
   grid-template-rows: min-content;
   grid-template-columns: repeat(3, 1fr);
-  gap: $gap-size;
+  gap: $gap-medium;
   background-color: $color-primary-dark;
   color: $color-white;
 }
