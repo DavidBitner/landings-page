@@ -1,19 +1,54 @@
 .btn {
-  background-color: #d6a283;
+  display: inline-block;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
   color: #fff;
-  border: none;
-  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-decoration: none;
+  text-align: center; }
+  .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #efdbd0;
+    transition: all 0.5s;
+    border-radius: 0.5rem;
+    z-index: -1; }
+  .btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #d6a283;
+    border-radius: 0.5rem;
+    z-index: -2; }
+  .btn:hover {
+    color: #d6a283; }
+    .btn:hover:before {
+      height: 100%; }
+  .btn--large {
+    font-size: 2rem; }
+
+.btn--arrow {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  font-size: 1.6rem;
-  padding: 1rem;
-  cursor: pointer;
-  transition: all 0.2s;
-  border-radius: 0.5rem;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06); }
-  .btn:hover {
-    background-color: #e3bea9; }
+  font-weight: 700;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+  .btn--arrow:hover {
+    background-color: rgba(255, 255, 255, 0.085); }
 
 *,
 *::before,
@@ -24,7 +59,8 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -281,7 +317,8 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  z-index: 2; }
   @supports (backdrop-filter: blur(10px)) {
     .modal {
       backdrop-filter: blur(10px);
