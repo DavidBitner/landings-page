@@ -2,11 +2,11 @@
   padding: $padding-size;
   text-align: center;
   position: relative;
+  overflow: hidden;
 
   display: grid;
   grid-template-rows: min-content;
   align-content: center;
-  overflow: hidden;
 
   &__background {
     position: absolute;
@@ -14,7 +14,8 @@
     width: 100%;
     z-index: 0;
 
-    animation: backgroundHeaderAnimation 20s ease-in-out 0s infinite alternate forwards;
+    animation: backgroundHeaderAnimation 20s ease-in-out 0s infinite alternate
+      forwards;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url("../img/landing-success.jpg");
     background-size: cover;
@@ -29,17 +30,5 @@
     grid-template-rows: 40% 30% min-content;
     justify-items: center;
     gap: $gap-large;
-  }
-}
-
-@keyframes backgroundHeaderAnimation {
-  0% {
-    transform: scale(1) translate(0, 0);
-    transform-origin: 16% 84%;
-  }
-
-  100% {
-    transform: scale(1.25) translate(-20px, 15px);
-    transform-origin: left bottom;
   }
 }

@@ -46,9 +46,35 @@
   text-decoration: none;
   text-align: center;
   font-weight: 700;
-  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+  border: none;
+  background-color: #d6a283;
+  cursor: pointer; }
   .btn--arrow:hover {
     background-color: rgba(255, 255, 255, 0.085); }
+
+@keyframes backgroundHeaderAnimation {
+  0% {
+    transform: scale(1) translate(0, 0);
+    transform-origin: 16% 84%; }
+  100% {
+    transform: scale(1.25) translate(-20px, 15px);
+    transform-origin: left bottom; } }
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(250px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
 
 *,
 *::before,
@@ -100,16 +126,16 @@ body {
   padding: 10rem 3rem;
   text-align: center;
   position: relative;
+  overflow: hidden;
   display: grid;
   grid-template-rows: min-content;
-  align-content: center;
-  overflow: hidden; }
+  align-content: center; }
   .header__background {
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: 0;
-    animation: backgroundHeaderAnimation 20s ease-in-out 0s infinite alternate forwards;
+    animation: backgroundHeaderAnimation 20s ease-in-out 0s infinite alternate forwards;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/landing-success.jpg");
     background-size: cover;
     background-position: center; }
@@ -120,14 +146,6 @@ body {
     grid-template-rows: 40% 30% min-content;
     justify-items: center;
     gap: 5rem; }
-
-@keyframes backgroundHeaderAnimation {
-  0% {
-    transform: scale(1) translate(0, 0);
-    transform-origin: 16% 84%; }
-  100% {
-    transform: scale(1.25) translate(-20px, 15px);
-    transform-origin: left bottom; } }
 
 .landings {
   padding: 10rem 3rem;
@@ -248,14 +266,15 @@ body {
   grid-template-columns: repeat(2, 1fr);
   padding: 10rem 3rem;
   align-items: center;
-  background-color: #d6a283; }
+  background-color: #d6a283;
+  overflow: hidden; }
   .testimonials__about {
     display: grid;
     grid-template-rows: repeat(2, min-content);
-    color: white;
+    color: #fff;
     row-gap: 1rem; }
     .testimonials__about .heading-2 {
-      color: white; }
+      color: #fff; }
   .testimonials__paragraphs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -274,7 +293,7 @@ body {
 .testimonial {
   display: grid;
   grid-template-rows: repeat(2, min-content);
-  grid-template-columns: min-content 1fr;
+  grid-template-columns: max-content 1fr;
   background-color: #fff;
   color: #d6a283;
   padding: 2rem;

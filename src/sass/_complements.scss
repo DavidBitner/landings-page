@@ -57,9 +57,11 @@
   text-decoration: none;
   text-align: center;
   font-weight: 700;
-  box-shadow: $shadow-dark;
+  border: none;
+  background-color: $color-primary;
+  cursor: pointer;
 
-  &:hover{
+  &:hover {
     background-color: $color-white-transparent;
   }
 }

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="stylesheet" href="src/sass/main.scss" />
 
-    <script defer src="src/js/controller.js" type="module"></script>
+    <script defer src="src/js/script.js" type="module"></script>
 
     <title>Landings Page</title>
   </head>
@@ -148,7 +148,7 @@
             <li class="plan__list-item">Trampoline</li>
             <li class="plan__list-item">Ball pit</li>
           </ul>
-          <a href="#" class="btn">Select plan</a>
+          <a href="#" class="btn" onClick="return false">Select plan</a>
         </div>
       </section>
 
@@ -171,19 +171,15 @@
 
         <div class="testimonials__testimonials">
           <div class="testimonials__testimonials__arrows">
-            <a href="#" class="btn--arrow"><</a>
-            <a href="#" class="btn--arrow">></a>
+            <button class="btn--arrow" id="btn-left">&lt;</button>
+            <button class="btn--arrow" id="btn-right">&gt;</button>
           </div>
           <div class="testimonial">
-            <div class="testimonial__title heading-3">Johnsons</div>
+            <div class="testimonial__title heading-3">Dave Jameson</div>
             <div class="testimonial__rate">★★★★★</div>
-            <div class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae magnam hic, id officia quia dolorem odit possimus quae
-              impedit cumque provident asperiores et molestiae minima aliquid
-              dignissimos eum harum labore? Optio atque ab accusantium a
-              quisquam modi commodi, sequi culpa, non officia soluta, aliquam id
-              voluptates quae! Dolor, exercitationem aliquid.
+            <div class="paragraph" id="testimonial-paragraph">
+              Never in my life I would think that I needed this service so bad,
+              is just unbelievable how good this service is and how necessary
             </div>
           </div>
         </div>
@@ -207,7 +203,7 @@
           <p class="paragraph">
             My name is David Bitner and i'm a web developer. This is my first
             project, a landing page built with sass using BEM naming methodology
-            and JavaScript with MVC design pattern.
+            and Javascript.
           </p>
         </div>
         <div class="footer__middle"></div>
