@@ -10,6 +10,7 @@
   z-index: 1;
   text-decoration: none;
   text-align: center;
+  letter-spacing: 0.3rem;
 
   &::before {
     content: "";
@@ -64,4 +65,12 @@
   &:hover {
     background-color: $color-white-transparent;
   }
+}
+
+.splide__arrow {
+  background-color: $color-primary;
+  color: $color-white;
+  font: inherit 700;
+  font-size: 3rem;
+  margin: 0 -60px;
 }

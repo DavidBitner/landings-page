@@ -9,7 +9,8 @@
   overflow: hidden;
   z-index: 1;
   text-decoration: none;
-  text-align: center; }
+  text-align: center;
+  letter-spacing: 0.3rem; }
   .btn::before {
     content: "";
     position: absolute;
@@ -51,6 +52,13 @@
   cursor: pointer; }
   .btn--arrow:hover {
     background-color: rgba(255, 255, 255, 0.085); }
+
+.splide__arrow {
+  background-color: #d6a283;
+  color: #fff;
+  font: inherit 700;
+  font-size: 3rem;
+  margin: 0 -60px; }
 
 @keyframes backgroundHeaderAnimation {
   0% {
@@ -224,19 +232,24 @@ body {
   padding: 10rem 3rem;
   display: grid;
   grid-template-rows: min-content;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-  background-color: #8e5433;
-  color: #fff; }
+  background-color: #d6a283;
+  color: #fff;
+  background-image: url("../img/plans.png"); }
+  .plans .splide {
+    display: grid;
+    background-color: transparent; }
 
 .plan {
   display: grid;
   grid-template-rows: min-content;
-  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   align-items: center;
-  padding: 3rem;
   border-radius: 0.5rem;
-  text-align: center; }
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #d6a283;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
   .plan .heading-2 {
     font-weight: 700;
     font-size: 5rem; }
@@ -247,18 +260,29 @@ body {
     color: #e3bea9; }
   .plan__list {
     list-style: none;
-    margin: 3rem 0; }
+    margin: 5rem 0; }
     .plan__list-item {
       line-height: 6rem;
       font-size: 1.6rem; }
       .plan__list-item:not(:last-child) {
         border-bottom: 1px solid #d6a283; }
+  .plan .btn {
+    justify-self: center;
+    font-size: 1.6rem; }
   .plan-1 {
-    background-color: #d6a283;
-    background-image: url("../img/plan-kids.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
+    background-image: url("../img/plan-kids.png"); }
+  .plan-2 {
+    background-image: url("../img/plan-sports.png"); }
+  .plan-3 {
+    background-image: url("../img/plan-vehicles.png"); }
+  .plan-4 {
+    background-image: url("../img/plan-earth.png"); }
+  .plan-5 {
+    background-image: url("../img/plan-solarSystem.png"); }
+  .plan-6 {
+    background-image: url("../img/plan-universe.png"); }
+  .plan-7 {
+    background-image: url("../img/plan-multiverse.png"); }
 
 .testimonials {
   display: grid;

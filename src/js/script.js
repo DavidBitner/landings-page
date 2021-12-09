@@ -73,3 +73,29 @@ function btnArrowsDisabled(state = true) {
   buttonArrowLeft.disabled = state;
   buttonArrowRight.disabled = state;
 }
+
+// Plans carousel
+document.addEventListener("DOMContentLoaded", function () {
+  const splide = new Splide(".splide", {
+    perPage: 3,
+    gap: "3rem",
+    speed: 1000,
+    perMove: 1,
+    pagination: false,
+    drag: false,
+    breakpoints: {
+      1400: {
+        perPage: 2,
+        gap: "2rem",
+        drag: true,
+      },
+
+      950: {
+        perPage: 1,
+        drag: true,
+        pagination: true,
+      },
+    },
+  });
+  splide.mount();
+});

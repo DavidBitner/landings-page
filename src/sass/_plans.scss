@@ -2,20 +2,27 @@
   padding: $padding-size;
   display: grid;
   grid-template-rows: min-content;
-  grid-template-columns: repeat(3, 1fr);
-  gap: $gap-medium;
-  background-color: $color-primary-dark;
+  background-color: $color-primary;
   color: $color-white;
+  background-image: url("../img/plans.png");
+
+  .splide {
+    display: grid;
+    background-color: transparent;
+  }
 }
 
 .plan {
   display: grid;
   grid-template-rows: min-content;
-  box-shadow: $shadow-dark;
   align-items: center;
-  padding: 3rem;
   border-radius: $border-radius;
   text-align: center;
+  padding: 3rem 0;
+  background-color: $color-primary;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   .heading-2 {
     font-weight: 700;
@@ -31,7 +38,7 @@
 
   &__list {
     list-style: none;
-    margin: 3rem 0;
+    margin: 5rem 0;
 
     &-item {
       line-height: 6rem;
@@ -43,11 +50,30 @@
     }
   }
 
+  .btn {
+    justify-self: center;
+    font-size: 1.6rem;
+  }
+
   &-1 {
-    background-color: $color-primary;
     background-image: url("../img/plan-kids.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  }
+  &-2 {
+    background-image: url("../img/plan-sports.png");
+  }
+  &-3 {
+    background-image: url("../img/plan-vehicles.png");
+  }
+  &-4 {
+    background-image: url("../img/plan-earth.png");
+  }
+  &-5 {
+    background-image: url("../img/plan-solarSystem.png");
+  }
+  &-6 {
+    background-image: url("../img/plan-universe.png");
+  }
+  &-7 {
+    background-image: url("../img/plan-multiverse.png");
   }
 }
