@@ -81,6 +81,9 @@
   @media only screen and (max-width: 56.25em) {
     .splide__arrow {
       margin: 0 -48px; } }
+  @media only screen and (min-width: 112.5em) {
+    .splide__arrow {
+      margin: 0 -72px; } }
 
 @keyframes backgroundHeaderAnimation {
   0% {
@@ -494,7 +497,7 @@ body {
   justify-items: left;
   align-items: center;
   gap: 3rem;
-  background-color: #8e5433;
+  background-color: #1d110b;
   color: #e3bea9; }
   @media only screen and (max-width: 75em) {
     .footer {

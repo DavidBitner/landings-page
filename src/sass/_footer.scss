@@ -6,19 +6,19 @@
   justify-items: left;
   align-items: center;
   gap: $gap-medium;
-  background-color: $color-primary-dark;
+  background-color: darken($color-primary-dark, 30%);
   color: $color-primary-light;
 
   @include respond(tab-land) {
     padding: $padding-small;
   }
 
-  @include respond(phone){
+  @include respond(phone) {
     grid-template-columns: 1fr;
   }
 
-  &__about-me{
-    @include respond(phone){
+  &__about-me {
+    @include respond(phone) {
       .heading-4 {
         text-align: center;
       }

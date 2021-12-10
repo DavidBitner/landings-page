@@ -7,7 +7,7 @@
   perspective: 150rem;
   background-color: $color-gray-light-1;
 
-  @include respond(tab-land){
+  @include respond(tab-land) {
     padding: $padding-small;
   }
 
@@ -71,7 +71,7 @@
       }
 
       @include respond(tab-land) {
-        .heading-4{
+        .heading-4 {
           opacity: 0;
         }
       }
