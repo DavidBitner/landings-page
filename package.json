@@ -28,7 +28,6 @@
     "postcss-cli": "^9.0.2"
   },
   "dependencies": {
-    "@splidejs/splide": "^3.6.9",
-    "glider-js": "^1.7.7"
+    "@splidejs/splide": "^3.6.9"
   }
 }
