@@ -21,11 +21,11 @@
   },
   "homepage": "https://github.com/DavidBitner/landings-page#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "^7.1.4",
     "concat": "^1.0.3",
-    "node-sass": "^6.0.1",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^9.0.2"
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^4.1.1"
   },
   "dependencies": {
     "@splidejs/splide": "^3.6.9"
