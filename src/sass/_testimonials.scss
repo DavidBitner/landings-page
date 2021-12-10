@@ -6,6 +6,12 @@
   align-items: center;
   background-color: $color-primary;
   overflow: hidden;
+  gap: $gap-small;
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    gap: $gap-medium;
+  }
 
   &__about {
     display: grid;
@@ -24,7 +30,6 @@
     gap: $gap-medium;
 
     span {
-      font-size: 3rem;
       display: block;
       justify-self: center;
     }
@@ -49,15 +54,6 @@
   color: $color-primary;
   padding: 2rem;
   gap: $gap-small;
-
-  &__title {
-    color: $color-primary;
-  }
-
-  &__rate {
-    color: $color-primary;
-    font-size: 2rem;
-  }
 
   .paragraph {
     grid-row: 2/-1;

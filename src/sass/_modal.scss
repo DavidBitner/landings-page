@@ -47,6 +47,10 @@
 
     ul {
       padding-left: 1.5rem;
+
+      @include respond(phone){
+        padding-left: 2rem;
+      }
     }
   }
 
@@ -66,15 +70,7 @@
 
     &:link,
     &:visited {
-      color: $color-primary;
-      font-size: 3rem;
-      text-decoration: none;
       transition: all 0.2s;
-      line-height: 1;
-    }
-
-    &:hover {
-      color: $color-primary;
     }
   }
 }

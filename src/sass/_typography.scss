@@ -25,3 +25,87 @@
 .paragraph {
   font-size: 1.6rem;
 }
+
+.btn--large {
+  font-size: 2rem;
+}
+
+.btn--arrow {
+  font-weight: 700;
+}
+
+.splide__arrow {
+  color: $color-white;
+  font: inherit 700;
+  font-size: 3rem;
+}
+
+.modal__close {
+  &:link,
+  &:visited {
+    font-size: 3rem;
+    text-decoration: none;
+    line-height: 1;
+    color: $color-primary;
+  }
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.plan {
+  .heading-2 {
+    font-weight: 700;
+    font-size: 5rem;
+  }
+
+  .heading-3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 3rem;
+    color: $color-primary-light;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+  }
+
+  &__list-item {
+    font-size: 1.6rem;
+    line-height: 6rem;
+  }
+}
+
+.testimonials__paragraphs span {
+  font-size: 3rem;
+
+  @include respond(tab-land) {
+    font-size: 2rem;
+  }
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+}
+
+.testimonial {
+  &__rate {
+    font-size: 2rem;
+    color: $color-primary;
+  }
+
+  &__title {
+    color: $color-primary;
+  }
+}
+
+.modal__list {
+  @include respond(phone) {
+    font-size: 1.6rem;
+  }
+}

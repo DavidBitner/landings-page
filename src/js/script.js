@@ -83,13 +83,15 @@ document.addEventListener("DOMContentLoaded", function () {
     perMove: 1,
     pagination: false,
     drag: false,
+    autoplay: true,
+    interval: 5000,
+    rewind: true,
     breakpoints: {
       1400: {
         perPage: 2,
         gap: "2rem",
         drag: true,
       },
-
       950: {
         perPage: 1,
         drag: true,

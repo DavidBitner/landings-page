@@ -44,10 +44,6 @@
       height: 100%;
     }
   }
-
-  &--large {
-    font-size: 2rem;
-  }
 }
 
 .btn--arrow {
@@ -57,7 +53,6 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  font-weight: 700;
   border: none;
   background-color: $color-primary;
   cursor: pointer;
@@ -69,8 +64,13 @@
 
 .splide__arrow {
   background-color: $color-primary;
-  color: $color-white;
-  font: inherit 700;
-  font-size: 3rem;
   margin: 0 -60px;
+
+  @include respond(tab-land) {
+    margin: 0 -54px;
+  }
+
+  @include respond(tab-port) {
+    margin: 0 -48px;
+  }
 }
