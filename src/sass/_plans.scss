@@ -4,7 +4,7 @@
   grid-template-rows: min-content;
   background-color: $color-primary;
   color: $color-white;
-  background-image: url("../img/plans.png");
+  background-image: url("../img/plans.jpg");
 
   .splide {
     display: grid;
@@ -24,7 +24,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @include respond(tab-port) {
+  @include respond(tab-land) {
     padding: 5rem 0;
   }
 
@@ -52,24 +52,24 @@
   }
 
   &-1 {
-    background-image: url("../img/plan-kids.png");
+    background-image: url("../img/plan-kids.jpg");
   }
   &-2 {
-    background-image: url("../img/plan-sports.png");
+    background-image: url("../img/plan-sports.jpg");
   }
   &-3 {
-    background-image: url("../img/plan-vehicles.png");
+    background-image: url("../img/plan-vehicles.jpg");
   }
   &-4 {
-    background-image: url("../img/plan-earth.png");
+    background-image: url("../img/plan-earth.jpg");
   }
   &-5 {
-    background-image: url("../img/plan-solarSystem.png");
+    background-image: url("../img/plan-solarSystem.jpg");
   }
   &-6 {
-    background-image: url("../img/plan-universe.png");
+    background-image: url("../img/plan-universe.jpg");
   }
   &-7 {
-    background-image: url("../img/plan-multiverse.png");
+    background-image: url("../img/plan-multiverse.jpg");
   }
 }

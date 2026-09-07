@@ -24,7 +24,7 @@ html {
 
   @include respond(phone) {
     // 1rem == 5px; 5/16 == 31.25%
-    font-size: 50%;
+    font-size: 31.25%;
   }
 
   @include respond(big-desktop) {

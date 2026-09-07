@@ -4,10 +4,10 @@
   "description": "A landing page",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
-    "compile:sass": "node-sass src/sass/main.scss src/css/style.comp.css",
+    "watch:sass": "sass src/sass/main.scss src/css/style.css -w",
+    "compile:sass": "sass src/sass/main.scss src/css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" src/css/style.comp.css -o src/css/style.prefix.css",
-    "compress:css": "node-sass src/css/style.prefix.css src/css/style.css --output-style compressed",
+    "compress:css": "sass src/css/style.prefix.css src/css/style.css --style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "repository": {
@@ -21,11 +21,11 @@
   },
   "homepage": "https://github.com/DavidBitner/landings-page#readme",
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
+    "autoprefixer": "^10.4.19",
     "concat": "^1.0.3",
-    "node-sass": "^4.5.3",
+    "sass": "^1.77.0",
     "npm-run-all": "^4.1.1",
-    "postcss-cli": "^4.1.1"
+    "postcss-cli": "^11.0.0"
   },
   "dependencies": {
     "@splidejs/splide": "^3.6.9"
