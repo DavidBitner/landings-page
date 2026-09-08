@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "mixins" as *;
+
 .testimonials {
   display: grid;
   grid-template-rows: min-content;

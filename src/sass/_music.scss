@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "mixins" as *;
+
 .music {
   display: grid;
   grid-template-rows: 50vh;

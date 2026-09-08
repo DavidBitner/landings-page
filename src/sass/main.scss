@@ -1,14 +1,12 @@
-@import "variables";
-@import "mixins";
-@import "complements";
-@import "animations";
+@use "complements";
+@use "animations";
 
-@import "base";
-@import "typography";
-@import "header";
-@import "landings";
-@import "plans";
-@import "testimonials";
-@import "music";
-@import "footer";
-@import "modal";
+@use "base";
+@use "typography";
+@use "header";
+@use "landings";
+@use "plans";
+@use "testimonials";
+@use "music";
+@use "footer";
+@use "modal";

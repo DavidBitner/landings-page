@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "mixins" as *;
+
 .heading-1 {
   text-transform: uppercase;
   color: $color-primary;

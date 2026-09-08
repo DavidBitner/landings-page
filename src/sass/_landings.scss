@@ -1,3 +1,6 @@
+@use "variables" as *;
+@use "mixins" as *;
+
 .landings {
   padding: $padding-size;
   display: grid;

@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 @mixin landingSideFrontImage($img) {
   background: linear-gradient(
       rgba($color-primary, 0.7),
