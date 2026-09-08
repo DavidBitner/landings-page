@@ -101,3 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   splide.mount();
 });
+
+document.querySelectorAll(".plan .btn").forEach((btn) => {
+  btn.addEventListener("click", (event) => event.preventDefault());
+});
